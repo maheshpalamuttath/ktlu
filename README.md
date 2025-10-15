@@ -137,8 +137,6 @@ Or configure it behind **Nginx** or **Apache** for public access.
 
 ## 📸 Screenshot
 
-*Add a sample screenshot here after running the app (optional):*
-
 ![KTLU Logo](https://github.com/maheshpalamuttath/ktlu/raw/main/static/images/ktlu.png)
 
 ---
