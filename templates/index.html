@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Library Users</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <h1>Top Library Users in the Last 30 Days</h1>
+
+  <div class="users-grid">
+    {% if users %}
+      {% for user in users %}
+      <div class="user-card">
+        <img src="{{ url_for('image', borrowernumber=user[0]) }}" alt="User Image" class="user-image">
+        <div class="user-name">{{ user[2] }}</div>
+        <div class="cardnumber">Card No: {{ user[1] }}</div>
+        <div class="borrow-count">{{ user[3] }} Borrowed</div>
+        <div class="branch">{{ user[4] }}</div>
+      </div>
+      {% endfor %}
+    {% else %}
+      <p>No records found.</p>
+    {% endif %}
+  </div>
+
+  {% include 'footer.html' %}
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
