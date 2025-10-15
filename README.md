@@ -19,7 +19,8 @@ ktlu/
 ├── app.py                # Main Flask application
 ├── config.py             # Database and branch configuration
 ├── templates/
-│   └── index.html        # HTML template for display
+│   ├── index.html        # HTML template for display
+│   └── footer.html       # HTML template for footer
 ├── static/
 │   ├── css/
 │   │   └── style.css     # Custom styling
