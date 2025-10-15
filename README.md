@@ -139,9 +139,7 @@ Or configure it behind **Nginx** or **Apache** for public access.
 
 *Add a sample screenshot here after running the app (optional):*
 
-```
-(https://github.com/maheshpalamuttath/ktlu/raw/main/static/images/ktlu.png)
-```
+![KTLU Logo](https://github.com/maheshpalamuttath/ktlu/raw/main/static/images/ktlu.png)
 
 ---
 
